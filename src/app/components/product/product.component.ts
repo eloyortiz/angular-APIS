@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { Product } from '../../models/product.model';
 
@@ -21,6 +21,7 @@ export class ProductComponent {
     description: ''
   };
   @Output() addedProduct = new EventEmitter<Product>();
+  @Output() showDetail = new EventEmitter<string>();
 
   constructor() { }
 
@@ -28,4 +29,7 @@ export class ProductComponent {
     this.addedProduct.emit(this.product);
   }
 
+  onShowDetail(){
+    this.showDetail.emit(this.product.id);
+  }
 }

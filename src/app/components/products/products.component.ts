@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../../models/product.model';
 
-import { StoreService } from '../../services/store.service';
 import { ProductsService } from '../../services/products.service';
+import { StoreService } from '../../services/store.service';
 
 @Component({
   selector: 'app-products',
@@ -16,6 +16,7 @@ export class ProductsComponent implements OnInit {
   total = 0;
   products: Product[] = [];
   showProductDetail = false;
+  product!: Product;
 
   constructor(
     private storeService: StoreService,
@@ -38,6 +39,11 @@ export class ProductsComponent implements OnInit {
 
   toggleProductDetail(){
     this.showProductDetail = !this.showProductDetail;
+  }
+
+  onShowDetail(id: string){
+    this.productsService.getProduct(id).subscribe(data => this.product = data);
+    this.toggleProductDetail();
   }
 
 }
