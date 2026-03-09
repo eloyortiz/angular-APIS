@@ -7,6 +7,7 @@ import { StoreService } from '../../services/store.service';
 
 @Component({
   selector: 'app-products',
+  standalone: false,
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })

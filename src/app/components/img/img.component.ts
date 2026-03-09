@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges, AfterViewIni
 
 @Component({
   selector: 'app-img',
+  standalone: false,
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss']
 })
