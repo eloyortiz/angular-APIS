@@ -4,6 +4,7 @@ import { StoreService } from '../../services/store.service'
 
 @Component({
   selector: 'app-nav',
+  standalone: false,
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
