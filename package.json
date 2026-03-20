@@ -22,17 +22,17 @@
     "date-fns": "^2.29.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.2.0",
-    "zone.js": "^0.15.1"
+    "zone.js": "^0.16.1"
   },
   "overrides": {
     "undici": "7.24.5",
     "socket.io-parser": "4.2.6"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^21.2.1",
+    "@angular-devkit/build-angular": "^21.2.3",
     "@angular-eslint/builder": "^21.3.0",
     "@angular-eslint/eslint-plugin": "^21.3.0",
-    "@angular-eslint/eslint-plugin-template": "^21.3.0",
+    "@angular-eslint/eslint-plugin-template": "^21.3.1",
     "@angular-eslint/schematics": "^21.3.0",
     "@angular-eslint/template-parser": "^21.3.0",
     "@angular/cli": "^21.2.1",
@@ -40,7 +40,7 @@
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.48.2",
-    "@typescript-eslint/parser": "5.48.2",
+    "@typescript-eslint/parser": "8.57.1",
     "eslint": "^8.33.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.20",
